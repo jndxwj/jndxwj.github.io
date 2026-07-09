@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>理财 · My Life</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <style>
+    .stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin: 16px 0; }
+    .stat-box { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px; text-align: center; }
+    .stat-box .num { font-size: 28px; font-weight: 800; color: var(--accent); }
+    .stat-box .num.green { color: var(--teal); }
+    .stat-box .label { font-size: 12px; color: var(--text2); margin-top: 2px; }
+    .fund-table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 14px; }
+    .fund-table th { text-align: left; padding: 10px 12px; font-weight: 600; border-bottom: 1px solid var(--border); color: var(--text2); font-size: 12px; }
+    .fund-table td { padding: 9px 12px; border-bottom: 1px solid var(--border); color: var(--text2); }
+    .fund-table tr:hover td { background: var(--bg-alt); color: var(--text); }
+    .fund-table .up { color: var(--accent); font-weight: 600; }
+    .fund-table .down { color: var(--text3); }
+    .allocation-bar { display: flex; height: 32px; border-radius: 8px; overflow: hidden; margin: 12px 0; }
+    .allocation-bar .seg { display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 600; color: #fff; }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="../index.html" class="logo">My <span>Life</span></a>
+      <button class="nav-toggle" aria-label="菜单"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a href="../index.html">首页</a></li>
+        <li><a href="interests.html">兴趣</a></li>
+        <li><a href="family.html">家庭</a></li>
+        <li><a href="work.html">工作</a></li>
+        <li><a href="finance.html" class="active">理财</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="page-header"><h1>📊 理财 <span class="hl">情况</span></h1><div class="sub">记录 · 分析 · 慢慢变富</div></div>
+    <div class="card">
+      <h2>💰 组合概览</h2>
+      <div class="stat-grid">
+        <div class="stat-box"><div class="num">¥--</div><div class="label">总市值</div></div>
+        <div class="stat-box"><div class="num green">+--%</div><div class="label">累计收益率</div></div>
+        <div class="stat-box"><div class="num">--</div><div class="label">持仓基金数</div></div>
+        <div class="stat-box"><div class="num">--年</div><div class="label">投资年限</div></div>
+      </div>
+      <p style="font-size:13px;color:var(--text3);text-align:center;">📝 数据手动更新 · 上次更新：2026年7月</p>
+    </div>
+    <div class="card">
+      <h2>📋 基金持仓明细</h2>
+      <div style="overflow-x:auto;">
+        <table class="fund-table">
+          <thead><tr><th>基金名称</th><th>持仓占比</th><th>收益率</th><th>行业</th><th>持有时间</th></tr></thead>
+          <tbody>
+            <tr><td><strong style="color:var(--text);">芯片 ETF (159995)</strong></td><td>30%</td><td class="up">+12.5%</td><td>半导体</td><td>1.5年</td></tr>
+            <tr><td><strong style="color:var(--text);">中证白酒</strong></td><td>20%</td><td class="down">-3.2%</td><td>消费</td><td>2年</td></tr>
+            <tr><td><strong style="color:var(--text);">沪深300增强</strong></td><td>25%</td><td class="up">+5.8%</td><td>宽基</td><td>3年</td></tr>
+            <tr><td><strong style="color:var(--text);">医药 ETF</strong></td><td>15%</td><td class="down">-1.5%</td><td>医药</td><td>1年</td></tr>
+            <tr><td><strong style="color:var(--text);">债券基金</strong></td><td>10%</td><td class="up">+2.1%</td><td>固收</td><td>2年</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="card">
+      <h2>🥧 资产配置</h2>
+      <div class="allocation-bar">
+        <div class="seg" style="width:30%;background:#c0392b;">芯片 30%</div>
+        <div class="seg" style="width:25%;background:#e67e22;">沪深300 25%</div>
+        <div class="seg" style="width:20%;background:#d4a017;">白酒 20%</div>
+        <div class="seg" style="width:15%;background:#2c7873;">医药 15%</div>
+        <div class="seg" style="width:10%;background:#6b6b6b;">债券 10%</div>
+      </div>
+    </div>
+    <div class="card">
+      <h2>📈 累计收益走势</h2>
+      <div class="chart-container" style="background:var(--bg-alt);min-height:200px;display:flex;align-items:center;justify-content:center;color:var(--text3);font-size:14px;border-radius:12px;">
+        <p>📈 收益曲线占位 — 后续可用 /dataviz 生成交互式图表嵌入</p>
+      </div>
+    </div>
+    <div class="card">
+      <h2>✍️ 投资心得</h2>
+      <div class="timeline" style="padding-left:24px;">
+        <div class="tl-item"><div class="date">2026 · 6月 · 半年复盘</div><p>芯片行业基金上半年表现强劲（+12.5%），但估值已经不算便宜。准备等回调再加仓，目前不追高。白酒还在亏损中，但消费复苏信号在增强，继续持有观察。整体组合上半年 +8.2%，跑赢沪深300。</p></div>
+        <div class="tl-item"><div class="date">2026 · 3月 · 调仓记录</div><p>减仓了一部分债券基金（从15%→10%），加仓芯片行业基金（从20%→30%）。理由：AI 驱动的半导体上行周期仍在早期，值得超配。同时也认识到行业集中度偏高，后续考虑用中证500做分散。</p></div>
+        <div class="tl-item"><div class="date">2026 · 1月 · 年度计划</div><p>今年投资主旋律还是"国产替代 + AI"双主线。保持 85-90% 权益仓位，行业配置上以芯片为主，辅以消费复苏和医药反弹机会。每月定投沪深300增强，逢低加仓芯片 ETF。</p></div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer"><p>&copy; 2026 吴俊 · 投资有风险，入市需谨慎 · 本页仅为个人记录</p></footer>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
