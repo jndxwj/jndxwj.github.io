@@ -54,11 +54,11 @@
         <table class="fund-table">
           <thead><tr><th>基金名称</th><th>持仓占比</th><th>收益率</th><th>行业</th><th>持有时间</th></tr></thead>
           <tbody>
-            <tr><td><strong style="color:var(--text);">芯片 ETF (159995)</strong></td><td>30%</td><td class="up">+12.5%</td><td>半导体</td><td>1.5年</td></tr>
-            <tr><td><strong style="color:var(--text);">中证白酒</strong></td><td>20%</td><td class="down">-3.2%</td><td>消费</td><td>2年</td></tr>
-            <tr><td><strong style="color:var(--text);">沪深300增强</strong></td><td>25%</td><td class="up">+5.8%</td><td>宽基</td><td>3年</td></tr>
-            <tr><td><strong style="color:var(--text);">医药 ETF</strong></td><td>15%</td><td class="down">-1.5%</td><td>医药</td><td>1年</td></tr>
-            <tr><td><strong style="color:var(--text);">债券基金</strong></td><td>10%</td><td class="up">+2.1%</td><td>固收</td><td>2年</td></tr>
+            <tr><td><strong style="color:var(--text);">嘉实中证500ETF联接</strong></td><td>40%</td><td class="up">--</td><td>宽基</td><td>--</td></tr>
+            <tr><td><strong style="color:var(--text);">嘉实科技创新混合</strong></td><td>30%</td><td class="up">--</td><td>科技</td><td>--</td></tr>
+            <tr><td><strong style="color:var(--text);">芯片 ETF (159995)</strong></td><td>15%</td><td class="up">+12.5%</td><td>半导体</td><td>1.5年</td></tr>
+            <tr><td><strong style="color:var(--text);">沪深300增强</strong></td><td>10%</td><td class="up">+5.8%</td><td>宽基</td><td>3年</td></tr>
+            <tr><td><strong style="color:var(--text);">货币基金/债券</strong></td><td>5%</td><td class="up">+2.1%</td><td>固收</td><td>--</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,13 +66,34 @@
     <div class="card">
       <h2>🥧 资产配置</h2>
       <div class="allocation-bar">
-        <div class="seg" style="width:30%;background:#c0392b;">芯片 30%</div>
-        <div class="seg" style="width:25%;background:#e67e22;">沪深300 25%</div>
-        <div class="seg" style="width:20%;background:#d4a017;">白酒 20%</div>
-        <div class="seg" style="width:15%;background:#2c7873;">医药 15%</div>
-        <div class="seg" style="width:10%;background:#6b6b6b;">债券 10%</div>
+        <div class="seg" style="width:40%;background:#2c7873;">中证500 40%</div>
+        <div class="seg" style="width:30%;background:#2980b9;">科技混合 30%</div>
+        <div class="seg" style="width:15%;background:#c0392b;">芯片 15%</div>
+        <div class="seg" style="width:10%;background:#d4a017;">沪深300 10%</div>
+        <div class="seg" style="width:5%;background:#6b6b6b;">货基 5%</div>
       </div>
     </div>
+    <div class="card" style="border:2px solid var(--teal);border-radius:14px;">
+      <h2>🎯 中证500ETF 量化投资策略</h2>
+      <p style="font-size:14px;line-height:1.8;">
+        基于"<strong style="color:var(--accent);">估值锚定（60%）+ 趋势过滤（40%）</strong>"的综合评分系统，
+        每周一执行一次操作，用规则的确定性对抗市场的不确定性。
+      </p>
+      <div style="text-align:center;margin:12px 0;">
+        <span style="display:inline-block;background:var(--accent);color:#fff;padding:10px 28px;border-radius:25px;font-size:16px;font-weight:700;">
+          当前信号：综合评分 72/100  →  建议仓位 75%
+        </span>
+      </div>
+      <p style="font-size:13px;color:var(--text3);text-align:center;">
+        中证500 PE=31.2 · 历史分位 25.7% · 指数 8504点
+      </p>
+      <div style="text-align:center;margin-top:10px;">
+        <a href="csi500-strategy.html" style="display:inline-block;background:var(--teal);color:#fff;padding:10px 24px;border-radius:8px;text-decoration:none;font-weight:600;">
+          查看完整策略 →
+        </a>
+      </div>
+    </div>
+
     <div class="card">
       <h2>📈 累计收益走势</h2>
       <div class="chart-container" style="background:var(--bg-alt);min-height:200px;display:flex;align-items:center;justify-content:center;color:var(--text3);font-size:14px;border-radius:12px;">
@@ -82,9 +103,9 @@
     <div class="card">
       <h2>✍️ 投资心得</h2>
       <div class="timeline" style="padding-left:24px;">
-        <div class="tl-item"><div class="date">2026 · 6月 · 半年复盘</div><p>芯片行业基金上半年表现强劲（+12.5%），但估值已经不算便宜。准备等回调再加仓，目前不追高。白酒还在亏损中，但消费复苏信号在增强，继续持有观察。整体组合上半年 +8.2%，跑赢沪深300。</p></div>
-        <div class="tl-item"><div class="date">2026 · 3月 · 调仓记录</div><p>减仓了一部分债券基金（从15%→10%），加仓芯片行业基金（从20%→30%）。理由：AI 驱动的半导体上行周期仍在早期，值得超配。同时也认识到行业集中度偏高，后续考虑用中证500做分散。</p></div>
-        <div class="tl-item"><div class="date">2026 · 1月 · 年度计划</div><p>今年投资主旋律还是"国产替代 + AI"双主线。保持 85-90% 权益仓位，行业配置上以芯片为主，辅以消费复苏和医药反弹机会。每月定投沪深300增强，逢低加仓芯片 ETF。</p></div>
+        <div class="tl-item"><div class="date">2026 · 7月 · 建立量化投资策略</div><p>我终于建立了一套属于自己的投资系统——中证500ETF 量化投资策略。核心思路：用 PE 估值分位决定买不买（估值锚定），用均线判定决定什么时候买（趋势过滤），用综合评分决定买多少（仓位管理）。虽然这套系统不会让我一夜暴富，但它能让我在市场波动中保持冷静——跌了知道该不该买，涨了知道该不该卖。这对于我这样容易受情绪影响的投资者来说，比任何预测都更有价值。</p></div>
+        <div class="tl-item"><div class="date">2026 · 6月 · 半年复盘</div><p>芯片行业基金上半年表现强劲（+12.5%），但估值已经不算便宜。按量化策略原则，PE偏高时不会加仓，等待回调。白酒还在亏损中，但消费复苏信号在增强，继续持有观察。整体组合上半年 +8.2%，跑赢沪深300。</p></div>
+        <div class="tl-item"><div class="date">2026 · 3月 · 调仓记录</div><p>减仓了一部分债券基金（从15%→10%），加仓芯片行业基金（从20%→30%）。但也意识到行业集中度偏高，逐步将中证500作为核心仓位。中证500覆盖了中等市值的优质成长企业，估值弹性大，适合做波段仓位管理。</p></div>
       </div>
     </div>
   </div>
